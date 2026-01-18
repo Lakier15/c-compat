@@ -1,0 +1,11 @@
+[package]
+name = "c-compat"
+version = "0.0.0"
+edition = "2024"
+authors = ["Alessandro Gasbarroni <alex.gasbarroni@gmail.com>"]
+description = "Reserved"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Lakier15/c-compat"
+
+
+[dependencies]
