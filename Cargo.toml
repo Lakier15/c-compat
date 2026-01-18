@@ -7,5 +7,12 @@ description = "Allows to easily compile and integrate C libraries in Rust in a c
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Lakier15/c-compat"
 readme = "README.md"
+links = "c_compat"
 
 [dependencies]
+libm = "0.2.15"
+# TODO: Allow feature selection from this crate, plus gate with auto-envs based on feature flags
+tinyrlibc = { version = "0.5.1", features = ["atoi", "qsort", "strcat", "strcpy"] }
+
+[build-dependencies]
+walkdir = "2.5.0"
