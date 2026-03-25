@@ -1,5 +1,12 @@
 //! stdlib.h Rust implementations
 
+use core::ffi::c_int;
+
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn abs(n: c_int) -> c_int {
+    n.abs()
+}
+
 // FIXME: Not thoroughly checked and tested
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn bsearch(

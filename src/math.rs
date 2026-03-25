@@ -4,6 +4,16 @@ use core::ffi::c_double;
 use core::ffi::c_float;
 
 #[unsafe(no_mangle)]
+pub extern "C" fn fabs(arg: c_double) -> c_double {
+    arg.abs()
+}
+
+#[unsafe(no_mangle)]
+pub extern "C" fn fabsf(arg: c_float) -> c_float {
+    arg.abs()
+}
+
+#[unsafe(no_mangle)]
 pub extern "C" fn fmin(x: c_double, y: c_double) -> c_double {
     x.min(y)
 }

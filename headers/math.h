@@ -1,6 +1,8 @@
 #ifndef _MATH_H
 #define _MATH_H
 
+#include <stdbool.h>
+
 float fabsf(float x);
 double fabs(double x);
 
