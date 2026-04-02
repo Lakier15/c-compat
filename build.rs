@@ -10,10 +10,12 @@ fn main() {
         .into_iter()
         .filter_map(|e| e.ok())
         .filter(|e| {
-            matches!(
+            let is_header = matches!(
                 e.path().extension().and_then(|os_str| os_str.to_str()),
                 Some("h")
-            )
+            );
+            let is_errno = e.file_name() == "errno.h";
+            is_header && (!is_errno || cfg!(feature = "errno"))
         })
         .collect::<Vec<_>>();
 
