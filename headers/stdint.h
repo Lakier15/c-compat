@@ -13,6 +13,12 @@ typedef __UINT32_TYPE__ uint32_t;
 typedef __INT64_TYPE__ int64_t;
 typedef __UINT64_TYPE__ uint64_t;
 
+/* Minimum of signed integral types. */
+#define INT8_MIN		(-__INT8_MAX__ - 1)
+#define INT16_MIN		(-__INT16_MAX__ - 1)
+#define INT32_MIN		(-__INT32_MAX__ - 1)
+#define INT64_MIN		(-__INT64_MAX__ - 1)
+
 /* Maximum of signed integral types. */
 #define INT8_MAX		__INT8_MAX__
 #define INT16_MAX		__INT16_MAX__
