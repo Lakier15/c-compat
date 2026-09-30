@@ -1,6 +1,6 @@
 [package]
 name = "c-compat"
-version = "0.1.0-alpha.1"
+version = "0.1.0-alpha.2"
 edition = "2024"
 authors = ["Alessandro Gasbarroni <alex.gasbarroni@gmail.com>"]
 description = "Allows to easily compile and integrate C libraries in Rust in a cross-platform way"
